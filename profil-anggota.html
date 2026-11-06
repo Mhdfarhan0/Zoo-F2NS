@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Anggota | Zoo-F2NS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profil-anggota.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span>🐾</span>
+        <div>
+            <h2>Zoo-F2NS</h2>
+            <p>Explore • Learn • Protect</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jelajahi.html">Profil Hewan</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+</header>
+
+<main class="member-container">
+
+    <div class="member-card" id="memberCard">
+
+        <!-- PROFIL UTAMA -->
+        <div class="profile-header">
+            <div class="profile-photo">
+                <img id="fotoAnggota" src="" alt="Foto Anggota">
+            </div>
+
+            <span class="profile-label">TEAM MEMBER</span>
+
+            <h1 id="namaAnggota"></h1>
+            <h3 id="jabatanAnggota"></h3>
+
+            <p id="deskripsiAnggota"></p>
+        </div>
+
+        <!-- TENTANG SAYA -->
+        <section class="profile-section">
+            <h2>👤 Tentang Saya</h2>
+            <p id="tentangAnggota"></p>
+        </section>
+
+        <!-- INFORMASI PRIBADI -->
+        <section class="profile-section">
+            <h2>📋 Informasi Pribadi</h2>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <span>🎯</span>
+                    <h4>Hobi</h4>
+                    <p id="hobiAnggota"></p>
+                </div>
+
+                <div class="info-box">
+                    <span>🎓</span>
+                    <h4>Pendidikan</h4>
+                    <p id="pendidikanAnggota"></p>
+                </div>
+
+                <div class="info-box">
+                    <span>💻</span>
+                    <h4>Keahlian</h4>
+                    <p id="keahlianAnggota"></p>
+                </div>
+
+                <div class="info-box">
+                    <span>🎮</span>
+                    <h4>Game Favorit</h4>
+                    <p id="gameAnggota"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEDIA SOSIAL -->
+        <section class="profile-section">
+            <h2>🌐 Media Sosial</h2>
+
+            <div class="social-box">
+                <p>Instagram</p>
+                <span id="instagramAnggota"></span>
+
+                <p>TikTok</p>
+                <span id="tiktokAnggota"></span>
+            </div>
+        </section>
+
+        <!-- MOTTO -->
+        <section class="motto-section">
+            <span>✦ MOTTO HIDUP ✦</span>
+            <h3 id="mottoAnggota"></h3>
+        </section>
+
+        <!-- TOMBOL KEMBALI -->
+        <a href="kontak.html" class="back-button">
+            ← Kembali ke Kontak
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-logo">
+        <h3>🐾 Zoo-F2NS</h3>
+        <p>Explore • Learn • Protect</p>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Zoo-F2NS. All Rights Reserved.
+    </p>
+</footer>
+
+<script>
+
+const anggota = {
+
+    farhan: {
+        nama: "Mhd Farhan Hidayat",
+        jabatan: "Ketua Kelompok",
+        foto: "images/profil-farhan.jpg",
+        deskripsi: "Anggota tim pengembang website Zoo-F2NS.",
+
+        tentang: "Saya merupakan seorang mahasiswa pada kampus stikom tunas bangsa pematangsiantar",
+        hobi: "Bermain game, makan",
+        pendidikan: "Mahasiswa S1",
+        keahlian: "HTML, CSS",
+        game: "Mobile Legends, Magic Chess",
+
+        instagram: "@muhmmadfrhn_",
+        tiktok: "@--------",
+
+        motto: "Apa Yang di Takdirkan, Tidak Akan Tergantikan"
+    },
+
+    natha: {
+        nama: "Natha Andhara Irawan",
+        jabatan: "Anggota Kelompok",
+        foto: "images/profil-natha.png",
+        deskripsi: "Anggota tim pengembang website Zoo-F2NS.",
+
+        tentang: "Pria sigma berkacamata. Hai semua, aku Natha.",
+        hobi: "Game",
+        pendidikan: "Mahasiswa S1",
+        keahlian: "Analisis Website",
+        game: "Mobile Legends, Roblox, Flash Peak",
+
+        instagram: "@nathzzz_07",
+        tiktok: "@vranarv",
+
+        motto: "Our perception is our reality."
+    },
+
+    satria: {
+        nama: "Satria Pratama",
+        jabatan: "Anggota Kelompok",
+        foto: "images/profil-satria.jpg",
+        deskripsi: "Anggota tim pengembang website Zoo-F2NS.",
+
+        tentang: "Saya Satria, Saya Mahasiswa Stikom Tunas Bangsa Pematangsiantar",
+        hobi: "Traveling",
+        pendidikan: "Mahasiswa S1",
+        keahlian: "Mekanik",
+        game: "Mobile Legends, Magic Chess",
+
+        instagram: "yk.S4tzz",
+        tiktok: "Satzz",
+
+        motto: "Be who you want to be, Not who they want you to be"
+    },
+
+    fajri: {
+        nama: "Fajri Hawari",
+        jabatan: "Anggota Kelompok",
+        foto: "images/profil-fajri.jpg",
+        deskripsi: "Anggota tim pengembang website Zoo-F2NS.",
+
+        tentang: "Nama saya Fajri Hawari, saya mahasiswa STIKOM Tunas Bangsa",
+        hobi: "Bermain bola, bermain game",
+        pendidikan: "Mahasiswa S1",
+        keahlian: "Microsoft, HTML",
+        game: "Mobile Legends, Free Fire, Roblox, Flash Peak",
+
+        instagram: "@fajri_hawari15",
+        tiktok: "@------",
+
+        motto: "Setiap kesulitan selalu ada kemudahan. Setiap masalah pasti ada solusi."
+    }
+
+};
+
+const parameter = new URLSearchParams(window.location.search);
+const namaKunci = parameter.get("anggota");
+const data = anggota[namaKunci];
+document.body.classList.add("bg-" + namaKunci);
+
+if (data) {
+
+    document.getElementById("fotoAnggota").src = data.foto;
+    document.getElementById("namaAnggota").textContent = data.nama;
+    document.getElementById("jabatanAnggota").textContent = data.jabatan;
+    document.getElementById("deskripsiAnggota").textContent = data.deskripsi;
+
+    document.getElementById("tentangAnggota").textContent = data.tentang;
+    document.getElementById("hobiAnggota").textContent = data.hobi;
+    document.getElementById("pendidikanAnggota").textContent = data.pendidikan;
+    document.getElementById("keahlianAnggota").textContent = data.keahlian;
+    document.getElementById("gameAnggota").textContent = data.game;
+
+    document.getElementById("instagramAnggota").textContent = data.instagram;
+    document.getElementById("tiktokAnggota").textContent = data.tiktok;
+
+    document.getElementById("mottoAnggota").textContent = data.motto;
+
+} else {
+
+    document.getElementById("memberCard").innerHTML =
+        '<h2>Profil anggota tidak ditemukan</h2>' +
+        '<a href="kontak.html" class="back-button">Kembali ke Kontak</a>';
+
+}
+
+</script>
+
+</body>
+</html>

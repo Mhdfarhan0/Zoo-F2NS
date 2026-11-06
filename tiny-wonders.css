@@ -1,0 +1,206 @@
+/* HERO */
+.tiny-hero {
+    min-height: 350px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url("images/walpeper8.jpg") center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* GALLERY */
+.tiny-gallery {
+    padding: 65px 8%;
+    background: #f7faf6;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-heading span {
+    color: #347b46;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.gallery-heading h2 {
+    font-size: 32px;
+    color: #244d30;
+    margin: 10px 0;
+}
+
+.gallery-heading p {
+    color: #666;
+}
+
+/* PHOTO GRID */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photo-item {
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.photo-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-item h3 {
+    padding: 16px;
+    text-align: center;
+    color: #285b36;
+    font-size: 19px;
+}
+
+/* BACK BUTTON */
+.back-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #347b46;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #245c33;
+    transform: translateY(-3px);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.93);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox-content {
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox-content p {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.lightbox-nav:hover {
+    background: #347b46;
+}
+
+.lightbox-nav.prev {
+    left: 25px;
+}
+
+.lightbox-nav.next {
+    right: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tiny-hero {
+        min-height: 280px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .tiny-gallery {
+        padding: 45px 5%;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-item img {
+        height: 240px;
+    }
+
+    .lightbox-nav.prev {
+        left: 5px;
+    }
+
+    .lightbox-nav.next {
+        right: 5px;
+    }
+}

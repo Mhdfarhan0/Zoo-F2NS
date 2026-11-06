@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Wonders | Zoo-F2NS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sky-wonders.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>🐾</span>
+            <div>
+                <h2>Zoo-F2NS</h2>
+                <p>Explore • Learn • Protect</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jelajahi.html">Profil Hewan</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html" class="active">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="sky-hero">
+        <div class="hero-content">
+            <span>BEAUTY OF THE SKY</span>
+            <h1>Sky Wonders</h1>
+            <p>
+                Temukan keindahan berbagai jenis burung
+                dengan warna, bentuk, dan keunikan yang menakjubkan.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="sky-gallery">
+
+        <div class="gallery-heading">
+            <span>OUR COLLECTION</span>
+            <h2>Beautiful Birds</h2>
+            <p>12 koleksi burung dengan keindahan dan keunikannya.</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-item">
+                <img src="images/elang.jpg" alt="Elang">
+                <h3>Elang</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/merak.jpg" alt="Merak">
+                <h3>Merak</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/flamingo.jpg" alt="Flamingo">
+                <h3>Flamingo</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/kakatua.jpg" alt="Kakatua">
+                <h3>Kakatua</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/burung_hantu.jpg" alt="Burung Hantu">
+                <h3>Burung Hantu</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/pinguin.jpg" alt="Pinguin">
+                <h3>Pinguin</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/toucan.jpg" alt="Toucan">
+                <h3>Toucan</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/bangau.jpg" alt="Bangau">
+                <h3>Bangau</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/kolibri.jpg" alt="Kolibri">
+                <h3>Kolibri</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/cendrawasih.jpg" alt="Cendrawasih">
+                <h3>Cendrawasih</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/bebek.jpg" alt="Bebek">
+                <h3>Bebek</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/merpati.jpg" alt="Merpati">
+                <h3>Merpati</h3>
+            </div>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="back-container">
+            <a href="galeri.html" class="back-button">
+                ← Kembali ke Galeri
+            </a>
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-lightbox" id="closeLightbox">&times;</button>
+
+        <button class="lightbox-nav prev" id="prevPhoto">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="Foto Galeri" id="lightboxImage">
+            <p id="photoCaption"></p>
+        </div>
+
+        <button class="lightbox-nav next" id="nextPhoto">&#10095;</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <h3>🐾 Zoo-F2NS</h3>
+            <p>Explore • Learn • Protect</p>
+        </div>
+
+        <p class="footer-quote">
+            "Lindungi satwa hari ini,<br>
+            untuk masa depan yang lebih baik."
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Zoo-F2NS. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="sky-wonders.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Explorers | Zoo-F2NS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nature-explorers.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>🐾</span>
+            <div>
+                <h2>Zoo-F2NS</h2>
+                <p>Explore • Learn • Protect</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jelajahi.html">Profil Hewan</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html" class="active">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="nature-hero">
+        <div class="hero-content">
+            <span>DISCOVER THE WILD NATURE</span>
+            <h1>Nature Explorers</h1>
+            <p>
+                Kenali berbagai reptil dan amfibi dengan bentuk,
+                kemampuan, serta keunikan yang luar biasa.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="nature-gallery">
+
+        <div class="gallery-heading">
+            <span>OUR COLLECTION</span>
+            <h2>Reptiles & Amphibians</h2>
+            <p>12 koleksi reptil dan amfibi dari berbagai habitat.</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-item">
+                <img src="images/komodo.jpg" alt="Komodo">
+                <h3>Komodo</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/buaya.jpg" alt="Buaya">
+                <h3>Buaya</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/ular.jpg" alt="Ular">
+                <h3>Ular</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/iguana.jpg" alt="Iguana">
+                <h3>Iguana</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/bunglon.jpg" alt="Bunglon">
+                <h3>Bunglon</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/kura-kura.jpg" alt="Kura-kura">
+                <h3>Kura-kura</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/penyu.jpg" alt="Penyu">
+                <h3>Penyu</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/katak.jpg" alt="Katak">
+                <h3>Katak</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/salamander.jpg" alt="Salamander">
+                <h3>Salamander</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/gecko.jpg" alt="Gecko">
+                <h3>Gecko</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/alligator.jpg" alt="Alligator">
+                <h3>Alligator</h3>
+            </div>
+
+            <div class="photo-item">
+                <img src="images/kadal.jpg" alt="Kadal">
+                <h3>Kadal</h3>
+            </div>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="back-container">
+            <a href="galeri.html" class="back-button">
+                ← Kembali ke Galeri
+            </a>
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-lightbox" id="closeLightbox">&times;</button>
+
+        <button class="lightbox-nav prev" id="prevPhoto">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="Foto Galeri" id="lightboxImage">
+            <p id="photoCaption"></p>
+        </div>
+
+        <button class="lightbox-nav next" id="nextPhoto">&#10095;</button>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <h3>🐾 Zoo-F2NS</h3>
+            <p>Explore • Learn • Protect</p>
+        </div>
+
+        <p class="footer-quote">
+            "Lindungi satwa hari ini,<br>
+            untuk masa depan yang lebih baik."
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Zoo-F2NS. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="nature-explorers.js"></script>
+
+</body>
+</html>

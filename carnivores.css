@@ -1,0 +1,307 @@
+/* HERO SECTION */
+.carnivore-hero {
+    min-height: 430px;
+    background:
+        linear-gradient(rgba(40, 15, 10, 0.68), rgba(40, 15, 10, 0.68)),
+        url("images/walcarni.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label,
+.section-label {
+    color: #a94e36;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-label {
+    color: #ffc1a7;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #a94e36;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #803923;
+    transform: translateY(-3px);
+}
+
+/* DEFINITION */
+.definition {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    padding: 75px 8%;
+    background: #ffffff;
+}
+
+.definition-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.definition-text h2 {
+    font-size: 32px;
+    color: #633526;
+    margin: 12px 0 18px;
+}
+
+.definition-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 13px;
+}
+
+/* SECTION HEADING */
+.characteristics,
+.animal-examples {
+    padding: 65px 8%;
+}
+
+.characteristics {
+    background: #f8efeb;
+}
+
+.animal-examples {
+    background: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    color: #633526;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* FEATURE CARDS */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+}
+
+.feature-card span {
+    font-size: 35px;
+}
+
+.feature-card h3 {
+    color: #85412d;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ANIMAL EXAMPLES */
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.example-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.09);
+    transition: 0.3s;
+}
+
+.example-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+}
+
+.example-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.example-info {
+    padding: 18px;
+}
+
+.example-info h3 {
+    color: #85412d;
+    margin-bottom: 10px;
+}
+
+.example-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .example-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .definition {
+        gap: 25px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .carnivore-hero {
+        min-height: 350px;
+        padding: 45px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .definition {
+        grid-template-columns: 1fr;
+        padding: 45px 7%;
+    }
+
+    .definition-image img {
+        height: 230px;
+    }
+
+    .definition-text h2 {
+        font-size: 26px;
+    }
+
+    .characteristics,
+    .animal-examples {
+        padding: 45px 7%;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .example-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .example-card img {
+        height: 140px;
+    }
+
+    .example-info {
+        padding: 12px;
+    }
+
+    .example-info h3 {
+        font-size: 16px;
+    }
+
+    .example-info p {
+        font-size: 12px;
+    }
+}
+
+/* TOMBOL KEMBALI */
+.back-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 35px;
+    margin: 10px 0 30px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #388e3c, #1b5e20);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.example-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.example-card:hover {
+    transform: translateY(-8px);
+}
+
+.example-card h3 {
+    color: #245c35;
+}

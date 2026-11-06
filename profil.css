@@ -1,0 +1,199 @@
+/* BACK BUTTON */
+.back-container {
+    padding: 25px 8% 0;
+}
+
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #315c32;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: 1px solid #315c32;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #315c32;
+    color: white;
+}
+
+/* PROFILE HERO */
+.profile-container {
+    padding: 35px 8% 70px;
+}
+
+.profile-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    background: #f1f6ed;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.profile-label {
+    color: #5b9e45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.profile-intro h1 {
+    font-size: 42px;
+    color: #294b2b;
+    margin: 15px 0 5px;
+}
+
+.scientific-name {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.profile-intro p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* INFORMATION */
+.information-section {
+    padding-top: 65px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #5b9e45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    color: #294b2b;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.information-card {
+    background: white;
+    padding: 28px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    border-left: 5px solid #5b9e45;
+}
+
+.information-card span {
+    font-size: 30px;
+}
+
+.information-card h3 {
+    color: #315c32;
+    margin: 12px 0;
+}
+
+.information-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* FACT SECTION */
+.fact-section {
+    margin-top: 55px;
+    background: #294b2b;
+    color: white;
+    padding: 40px;
+    border-radius: 18px;
+}
+
+.fact-content span {
+    color: #c5ed9b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.fact-content h2 {
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.fact-content p {
+    line-height: 1.8;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+    .profile-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image img {
+        height: 300px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .back-container {
+        padding: 20px 6% 0;
+    }
+
+    .profile-container {
+        padding: 25px 6% 45px;
+    }
+
+    .profile-hero {
+        padding: 18px;
+        gap: 22px;
+    }
+
+    .profile-image img {
+        height: 230px;
+    }
+
+    .profile-intro h1 {
+        font-size: 32px;
+    }
+
+    .information-section {
+        padding-top: 45px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .information-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .information-card {
+        padding: 22px;
+    }
+
+    .fact-section {
+        padding: 25px;
+        margin-top: 35px;
+    }
+}

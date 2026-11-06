@@ -1,0 +1,237 @@
+/* CONTAINER */
+.member-container {
+    min-height: 75vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* KARTU UTAMA */
+.member-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 40px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* HEADER PROFIL */
+.profile-header {
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e5eee3;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #8bc34a;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-label {
+    color: #579568;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.profile-header h1 {
+    color: #245c35;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.profile-header h3 {
+    color: #579568;
+    margin-bottom: 15px;
+}
+
+.profile-header p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* BAGIAN PROFIL */
+.profile-section {
+    margin-top: 35px;
+}
+
+.profile-section h2 {
+    color: #245c35;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.profile-section > p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* GRID INFORMASI */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.info-box {
+    background: linear-gradient(145deg, #ffffff, #eaf4e6);
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #e0edda;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.08);
+}
+
+.info-box span {
+    font-size: 28px;
+}
+
+.info-box h4 {
+    color: #245c35;
+    margin: 10px 0;
+}
+
+.info-box p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* MEDIA SOSIAL */
+.social-box {
+    background: #edf5e9;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.social-box p {
+    color: #245c35;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-box span {
+    display: block;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-box span:last-child {
+    margin-bottom: 0;
+}
+
+/* MOTTO */
+.motto-section {
+    margin-top: 35px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #245c35, #579568);
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+}
+
+.motto-section span {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #d5f1bd;
+}
+
+.motto-section h3 {
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* TOMBOL KEMBALI */
+.back-button {
+    display: table;
+    margin: 35px auto 0;
+    padding: 13px 25px;
+    background: #245c35;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #397c4d;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+
+    .member-card {
+        padding: 25px 18px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-header h1 {
+        font-size: 23px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-section h2 {
+        font-size: 19px;
+    }
+
+}
+
+/* BACKGROUND BERBEDA SETIAP ANGGOTA */
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease;
+}
+
+body.bg-farhan {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("images/bg-farhan.jpg");
+}
+
+body.bg-natha {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("images/bg-natha.jpg");
+}
+
+body.bg-satria {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("images/bg-satria.png");
+}
+
+body.bg-fajri {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("images/bg-fajri.png");
+}
